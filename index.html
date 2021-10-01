@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<link rel="shortcut icon" href="V.jpg" type="image/jpg">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(245, 12, 12);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(96, 10, 235);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: rgb(233, 229, 9);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #e9f811;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(222, 245, 122);
+  padding: 10px;
+  text-align: center;
+  color: rgb(235, 35, 62);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>GOOD MORNING</h2>
+<hr>WELCOME</hr>
+
+
+
+<header>
+  <h2>Vinayak Gaonkar<img  src="v.jpg" width="40" height="40"></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="mart.html">U DONT WANNA CLICK THIS</a></li>
+    
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>About myself</h1>
+    <p>Who am i??
+      <br>
+        I am an engineering student </p>  
+        
+  </article>
+</section>
+
+<footer>
+  <p>Powered by VPG</p>
+</footer>
+
+</body>
+</html>
